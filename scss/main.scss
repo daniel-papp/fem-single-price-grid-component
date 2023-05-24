@@ -12,8 +12,6 @@ body {
 }
 
 .component {
-    border: 1px solid red;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,16 +20,80 @@ body {
 }
 
 .section {
-    border: 1px solid red;
-    padding: 20px;
+    padding: 30px;
+
+    h1, h2, h3 {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
 
     h1 {
         font-size: 1.3rem;
-        margin-bottom: 1.5rem;
     }
 
     h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
         font-size: 1.1rem;
-        margin-bottom: 1.5rem;
+    }
+    
+    p {
+        line-height: 1.75rem;
+    }
+}
+
+.section-1 {
+    background-color: c.$clr-white;
+
+    h1 {
+        color: c.$clr-primary;
+    }
+
+    h3 {
+        color: c.$clr-bright;
+    }
+
+    p {
+        color: c.$clr-medium-text;
+    }
+}
+
+.section-2 {
+    background-color: c.$clr-primary;
+
+    h2 {
+        color: c.$clr-white;
+    }
+
+    p {
+        color: c.$clr-light-text;
+
+        span {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: c.$clr-white;
+            margin-right: 15px;
+        }
+
+    }
+
+    .pricing {
+        color: red;
+    }
+}
+
+.section-3 {
+    background-color: desaturate(lighten(c.$clr-primary, 10%), 15%);
+
+    h2 {
+        color: c.$clr-white;
+    }
+
+    li {
+        color: c.$clr-light-text;
+        list-style: none;
+        line-height: 1.5rem;
     }
 }
