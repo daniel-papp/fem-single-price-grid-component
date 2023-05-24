@@ -1,2 +1,37 @@
 @use "./reset.scss";
 @use "./config.scss" as c;
+
+body {
+    border: 1px solid red;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: c.$clr-background;
+
+}
+
+.component {
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 375px;
+}
+
+.section {
+    border: 1px solid red;
+    padding: 20px;
+
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+}
