@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +10,11 @@ button {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+}
+
+:root {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
