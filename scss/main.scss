@@ -2,7 +2,6 @@
 @use "./config.scss" as c;
 
 body {
-    border: 1px solid red;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    // align-items: left;
     max-width: 375px;
 }
 
@@ -79,9 +78,26 @@ body {
 
     }
 
-    .pricing {
-        color: red;
+    .button {
+        display: block;
+        margin: 30px auto 0px auto;
+        background-color: c.$clr-bright;
+        color: c.$clr-white;
+        height: 3rem;
+        width: 95%;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 5px;
+
+        &:hover{
+            background-color: darken(c.$clr-bright, 10%);
+        }
+
+        &:active {
+            background-color: c.$clr-bright;
+        }
     }
+
 }
 
 .section-3 {

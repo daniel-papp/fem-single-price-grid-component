@@ -10,6 +10,8 @@ button {
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
+  border: none;
+  outline: none;
 }
 
 :root {
@@ -18,7 +20,6 @@ button {
 }
 
 body {
-  border: 1px solid red;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -30,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
   max-width: 375px;
 }
 
@@ -82,8 +82,22 @@ body {
   color: #FFFFFF;
   margin-right: 15px;
 }
-.section-2 .pricing {
-  color: red;
+.section-2 .button {
+  display: block;
+  margin: 30px auto 0px auto;
+  background-color: hsl(71, 73%, 54%);
+  color: #FFFFFF;
+  height: 3rem;
+  width: 95%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+}
+.section-2 .button:hover {
+  background-color: #a4c21e;
+}
+.section-2 .button:active {
+  background-color: hsl(71, 73%, 54%);
 }
 
 .section-3 {
