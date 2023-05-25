@@ -1,5 +1,6 @@
 @use "./reset.scss";
 @use "./config.scss" as c;
+@use "./media.scss" as m;
 
 body {
     min-height: 100vh;
@@ -7,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: c.$clr-background;
+    padding: 10px;
 
 }
 
@@ -15,9 +17,10 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 375px;
+    min-width: 220px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 10px 10px 10px 0px rgba(145, 145, 145, 0.1);
+    box-shadow: 10px 10px 10px 10px rgba(145, 145, 145, 0.1);
 }
 
 .section {
@@ -121,3 +124,5 @@ body {
         line-height: 1.5rem;
     }
 }
+
+@include m.desktop-view;
