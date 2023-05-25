@@ -76,22 +76,27 @@ body {
 .section-2 p {
   color: hsl(204, 43%, 93%);
 }
-.section-2 p span {
+.section-2 #pricing {
+  display: flex;
+  margin-bottom: 10px;
+  color: #afccdf;
+}
+.section-2 #pricing span {
   font-size: 2.2rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .section-2 .button {
   display: block;
   margin: 30px auto 0px auto;
   background-color: hsl(71, 73%, 54%);
   color: #FFFFFF;
-  height: 3rem;
+  height: 3.3rem;
   width: 95%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .section-2 .button:hover {
   background-color: #a4c21e;

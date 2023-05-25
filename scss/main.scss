@@ -68,14 +68,19 @@ body {
 
     p {
         color: c.$clr-light-text;
+    }
 
+    #pricing {
+        display: flex;
+        margin-bottom: 10px;
+        color: darken(c.$clr-light-text, 15%);
+        
         span {
             font-size: 2.2rem;
             font-weight: 700;
             color: c.$clr-white;
-            margin-right: 15px;
+            margin-right: 10px;
         }
-
     }
 
     .button {
@@ -83,11 +88,11 @@ body {
         margin: 30px auto 0px auto;
         background-color: c.$clr-bright;
         color: c.$clr-white;
-        height: 3rem;
+        height: 3.3rem;
         width: 95%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 700;
-        border-radius: 5px;
+        border-radius: 6px;
 
         &:hover{
             background-color: darken(c.$clr-bright, 10%);
